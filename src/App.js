@@ -8,8 +8,7 @@ class App extends Component {
             .then(data => fonksiyon(data))  
         }
         let i=0;
-        function fonksiyon(data){
-            console.log(data.length)            
+        function fonksiyon(data){                       
             for(i=0; i<data.length; i++){                         
                 let col=document.createElement("div")
                 col.classList.add("content")
@@ -38,15 +37,17 @@ class App extends Component {
             }        
         }
         function fonksiyon2(){             
-            let cardTitles=document.querySelectorAll(".card-title")            
-            for(i=0; i<document.querySelectorAll(".card").length; i++){
-                let search=cardTitles[i].innerHTML.search(document.getElementById("ayar").value)                
+            let cardTitles=document.querySelectorAll(".card-title")                      
+            for(i=0; i<document.getElementsByClassName("card").length; i++){
+                cardTitles[i].innerHTML=cardTitles[i].innerHTML.toLowerCase()
+                document.getElementById("ayar").value=document.getElementById("ayar").value.toLowerCase()                
+                let search=cardTitles[i].innerHTML.search(document.getElementById("ayar").value)                                        
                 if(search>-1){
                     document.querySelectorAll(".card")[i].style.display="block"
                 }
                 else{
                     document.querySelectorAll(".card")[i].style.display="none"
-                }           
+                }   
             }
         }
         variable()     
