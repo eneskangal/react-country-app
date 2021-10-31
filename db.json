@@ -1,0 +1,34 @@
+{
+    "data":[
+        {
+            "id":1,
+            "card-img":"1.png",
+            "country":"turkey",
+            "ınformation":"tc"
+        },
+        {
+            "id":2,
+            "card-img":"2.png",
+            "country":"greece",
+            "ınformation":"second country"
+        },
+        {
+            "id":3,
+            "card-img":"3.png",
+            "country":"iraq",
+            "ınformation":"country"
+        },
+        {
+            "id":4,
+            "card-img":"4.png",
+            "country":"iran",
+            "ınformation":"country 4"
+        },
+        {
+            "id":5,
+            "card-img":"5.png",
+            "country":"ireland",
+            "ınformation":"country 5"
+        }        
+    ]
+}

@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: aqua;
+}
+#ayar{
+    width: 100%;    
+    margin: 20px 0;
+    padding: 15px;
+}
+.content{
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;  
+}
